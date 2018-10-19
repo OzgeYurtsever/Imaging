@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.name-field {
+  margin: 2em 2em 2em 2em;
+}
+
+.save-button {
+  font-size: 1em;
+}
+
+.name-entry {
+  padding-left: 2em
+}
+
+.user-greeting {
+  /* padding-bottom: 2em; */
+  padding-left: 2em
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
