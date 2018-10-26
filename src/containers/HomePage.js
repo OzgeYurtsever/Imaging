@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import Form from '../components/Form';
 import { bindActionCreators } from 'redux';
 import { addName } from './../ActionCreator';
+import BrowseFiles from './../components/BrowseFiles';
 
 class HomePage extends React.Component {
-  render() {
+  render = () => {
     console.log(this.props);
     return (
       <div>
@@ -14,12 +15,13 @@ class HomePage extends React.Component {
         ) : (
           <div>
             <p className="user-greeting">{`Welcome ${this.props.name}!`} </p>
-            <Form onUserName={this.props.addName} formName="File Name" />
+            {/* <Form onUserName={this.props.addName} formName="File Name" /> */}
+            <BrowseFiles browseImage={this.browseImage} />
           </div>
         )}
       </div>
     );
-  }
+  };
 }
 
 const mapStateToProps = state => ({

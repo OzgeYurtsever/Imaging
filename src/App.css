@@ -19,6 +19,11 @@
   padding-left: 2em
 }
 
+.cornerstone-canvas {
+  width: "512px";
+  height: "512px"
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
